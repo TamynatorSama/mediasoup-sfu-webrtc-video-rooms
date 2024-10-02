@@ -138,7 +138,7 @@ io.on('connection', (socket) => {
   })
 
   socket.on('createWebRtcTransport', async (_, callback) => {
-    console.log(socket.room_id)
+    console.log(getLocalIp())
     console.log('Create webrtc transport', {
       name: `${roomList.get(socket.room_id).getPeers().get(socket.id).name}`
     })

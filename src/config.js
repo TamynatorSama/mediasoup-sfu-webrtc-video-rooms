@@ -72,6 +72,9 @@ module.exports = {
           announcedIp: getLocalIp() // replace by public IP address
         }
       ],
+      enableUdp:true,
+      enableTcp:true,
+      preferUdp:true,
       maxIncomingBitrate: 1500000,
       initialAvailableOutgoingBitrate: 1000000
     }
